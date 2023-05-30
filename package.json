@@ -20,6 +20,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.14.1",
     "nuxt": "^3.5.2",
+    "nuxt-icon": "^0.4.1",
     "prettier": "^2.8.8",
     "prettier-plugin-organize-imports": "^3.2.2",
     "prettier-plugin-packagejson": "^2.4.3",
