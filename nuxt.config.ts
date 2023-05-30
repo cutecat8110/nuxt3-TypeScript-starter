@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     '@vueuse/nuxt',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@nuxtjs/i18n'
   ],
 
   app: {
@@ -14,6 +15,17 @@ export default defineNuxtConfig({
 
   pinia: {
     autoImports: ['defineStore']
+  },
+
+  i18n: {
+    defaultLocale: 'zh',
+    langDir: 'locales',
+    locales: [
+      { code: 'en', file: 'en.json', iso: 'en-US', name: 'English' },
+      { code: 'zh', file: 'zh.json', iso: 'zh-TW', name: '繁體中文' }
+    ],
+    strategy: 'no_prefix',
+    vueI18n: './nuxt-i18n.js'
   },
 
   typescript: {

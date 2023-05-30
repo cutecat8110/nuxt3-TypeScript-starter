@@ -8,8 +8,26 @@
         <NuxtLink to="/test404">404</NuxtLink>
         <NuxtLink to="/pinia">pinia</NuxtLink>
       </nav>
+      <div class="flex gap-4">
+        {{ $t('language') }}
+        <button
+          v-for="(localeItem, index) in locales"
+          :key="index"
+          type="button"
+          @click="changeLanguage(localeItem.code)"
+          class="underline"
+        >
+          {{ localeItem.code }}
+        </button>
+      </div>
     </div>
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+const { locale, locales, setLocaleCookie } = useI18n()
+const changeLanguage = (localeCode) => {
+  locale.value = localeCode
+  setLocaleCookie(localeCode)
+}
+</script>

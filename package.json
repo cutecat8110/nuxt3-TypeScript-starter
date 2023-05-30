@@ -5,12 +5,13 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .ts,.js,.vue ."
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "preview": "nuxt preview"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/i18n": "^8.0.0-beta.12",
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
     "@pinia/nuxt": "^0.4.11",
