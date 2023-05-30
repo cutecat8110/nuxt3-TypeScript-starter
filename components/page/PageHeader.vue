@@ -6,6 +6,7 @@
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/contact">Contact</NuxtLink>
         <NuxtLink to="/test404">404</NuxtLink>
+        <NuxtLink to="/pinia">pinia</NuxtLink>
       </nav>
     </div>
   </header>
